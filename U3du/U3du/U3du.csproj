@@ -50,15 +50,80 @@
   <ItemGroup>
     <Compile Include="ExportOptions.cs" />
     <Compile Include="ExtractOptions.cs" />
+    <Compile Include="Map.cs" />
     <Compile Include="ImportOptions.cs" />
     <Compile Include="ICommander.cs" />
     <Compile Include="Options.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Unity\assetbundle\AssetBundleEntry.cs" />
+    <Compile Include="Unity\assetbundle\AssetBundleEntryInfo.cs" />
+    <Compile Include="Unity\assetbundle\AssetBundleException.cs" />
+    <Compile Include="Unity\assetbundle\AssetBundleExternalEntry.cs" />
+    <Compile Include="Unity\assetbundle\AssetBundleHeader.cs" />
+    <Compile Include="Unity\assetbundle\AssetBundleInternalEntry.cs" />
+    <Compile Include="Unity\assetbundle\AssetBundleReader.cs" />
+    <Compile Include="Unity\assetbundle\AssetBundleUtils.cs" />
+    <Compile Include="Unity\assetbundle\AssetBundleWriter.cs" />
+    <Compile Include="Unity\assetbundle\codec\AssetBundleCodec.cs" />
+    <Compile Include="Unity\assetbundle\codec\XianjianCodec.cs" />
+    <Compile Include="Unity\asset\AssetException.cs" />
+    <Compile Include="Unity\asset\AssetFile.cs" />
+    <Compile Include="Unity\asset\AssetHeader.cs" />
+    <Compile Include="Unity\asset\FieldType.cs" />
+    <Compile Include="Unity\asset\FieldTypeNode.cs" />
+    <Compile Include="Unity\asset\FieldTypeTree.cs" />
+    <Compile Include="Unity\asset\FileIdentifier.cs" />
+    <Compile Include="Unity\asset\FileIdentifierTable.cs" />
+    <Compile Include="Unity\asset\ObjectInfo.cs" />
+    <Compile Include="Unity\asset\ObjectInfoTable.cs" />
+    <Compile Include="Path.cs" />
+    <Compile Include="Unity\asset\StringTable.cs" />
+    <Compile Include="Unity\asset\Type.cs" />
+    <Compile Include="Unity\asset\TypeClass.cs" />
+    <Compile Include="Unity\asset\TypeNode.cs" />
+    <Compile Include="Unity\asset\TypeTree.cs" />
+    <Compile Include="Unity\asset\VersionInfo.cs" />
+    <Compile Include="Unity\DisUnity.cs" />
+    <Compile Include="Unity\engine\AudioClip.cs" />
+    <Compile Include="Unity\engine\enums\AudioType.cs" />
+    <Compile Include="Unity\engine\Font.cs" />
+    <Compile Include="Unity\engine\MovieTexture.cs" />
+    <Compile Include="Unity\engine\SubstanceArchive.cs" />
+    <Compile Include="Unity\engine\TextAsset.cs" />
+    <Compile Include="Unity\engine\UnityObject.cs" />
+    <Compile Include="Unity\rtti\FieldNode.cs" />
+    <Compile Include="Unity\rtti\ObjectData.cs" />
+    <Compile Include="Unity\rtti\ObjectSerializer.cs" />
+    <Compile Include="Unity\rtti\RuntimeTypeException.cs" />
+    <Compile Include="Unity\util\TypeTreeDatabase.cs" />
+    <Compile Include="Unity\util\TypeTreeUtils.cs" />
+    <Compile Include="Unity\util\UnityClass.cs" />
+    <Compile Include="Unity\util\UnityClassDatabase.cs" />
+    <Compile Include="Unity\util\UnityGUID.cs" />
+    <Compile Include="Unity\util\UnityStruct.cs" />
+    <Compile Include="Unity\util\UnityVersion.cs" />
+    <Compile Include="Util\collection\Node.cs" />
+    <Compile Include="Util\io\DataBlock.cs" />
+    <Compile Include="Util\io\FileUtilsExt.cs" />
+    <Compile Include="Util\ObjectDump.cs" />
+    <Compile Include="Util\progress\DummyProgress.cs" />
+    <Compile Include="Util\progress\LogProgress.cs" />
+    <Compile Include="Util\progress\Progress.cs" />
+    <Compile Include="Util\progress\ProgressMonitorWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extract\AbstractAssetExtractor.cs" />
+    <Compile Include="Extract\AssetExtractor.cs" />
+    <Compile Include="Extract\AudioClipExtractor.cs" />
+    <Compile Include="Extract\FontExtractor.cs" />
+    <Compile Include="Extract\MovieTextureExtractor.cs" />
+    <Compile Include="Extract\ShaderExtractor.cs" />
+    <Compile Include="Extract\TextAssetExtractor.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
