@@ -15,6 +15,10 @@
  * 
  * @author Nico Bergemann <barracuda415 at yahoo.de>
  */
+
+using System.Collections.Generic;
+using System.IO;
+
 public class AssetBundleUtils {
     
     private static  Charset PROP_CHARSET = Charset.forName("US-ASCII");

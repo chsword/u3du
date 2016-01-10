@@ -14,6 +14,9 @@
  * 
  * @author Nico Bergemann <barracuda415 at yahoo.de>
  */
+
+using System.Collections.Generic;
+
 public class AssetBundleReader : Closeable, Iterable<AssetBundleEntry> {
     
     private  AssetBundleHeader header = new AssetBundleHeader();
